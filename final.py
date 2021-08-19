@@ -13,8 +13,7 @@ price = []
 for i in range(1, 11):
 
     # website in variable
-    website = 'https://www.cars.com/shopping/results/?page=' + str(
-        i) + '&page_size=20&dealer_id=&list_price_max=&list_price_min=&makes[]=mercedes_benz&maximum_distance=20&mileage_max=&sort=best_match_desc&stock_type=cpo&year_max=&year_min=&zip='
+    website = 'https://www.cars.com/shopping/results/?page=' + str(i) + '&page_size=20&dealer_id=&list_price_max=&list_price_min=&makes[]=mercedes_benz&maximum_distance=20&mileage_max=&sort=best_match_desc&stock_type=cpo&year_max=&year_min=&zip='
 
     # request to website
     response = requests.get(website)
